@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- Indica que el documento utiliza HTML5 -->
+
+<html lang="es">
+<!-- Inicio del documento HTML en español -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Permite utilizar caracteres especiales y tildes -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace que la página sea responsive en dispositivos móviles -->
+
+    <title>Calculadora Web</title>
+    <!-- Título que aparece en la pestaña del navegador -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Conecta el archivo CSS con el HTML -->
+</head>
+
+<body>
+
+    <!-- Contenedor principal de la calculadora -->
+    <div class="calculadora">
+
+        <!-- Pantalla donde se muestran números y resultados -->
+        <input type="text" id="pantalla" disabled>
+
+        <!-- Contenedor de todos los botones -->
+        <div class="botones">
+
+            <!-- Botón para limpiar toda la pantalla -->
+            <button onclick="limpiar()">C</button>
+
+            <!-- Botones de operadores matemáticos -->
+            <button onclick="agregar('/')">/</button>
+            <button onclick="agregar('*')">*</button>
+
+            <!-- Botón para borrar un solo carácter -->
+            <button onclick="borrar()">←</button>
+
+            <!-- Botones numéricos -->
+            <button onclick="agregar('7')">7</button>
+            <button onclick="agregar('8')">8</button>
+            <button onclick="agregar('9')">9</button>
+
+            <!-- Operador resta -->
+            <button onclick="agregar('-')">-</button>
+
+            <button onclick="agregar('4')">4</button>
+            <button onclick="agregar('5')">5</button>
+            <button onclick="agregar('6')">6</button>
+
+            <!-- Operador suma -->
+            <button onclick="agregar('+')">+</button>
+
+            <button onclick="agregar('1')">1</button>
+            <button onclick="agregar('2')">2</button>
+            <button onclick="agregar('3')">3</button>
+
+            <!-- Botón igual para calcular el resultado -->
+            <button class="igual" onclick="calcular()">=</button>
+
+            <!-- Botón cero ocupa dos espacios -->
+            <button onclick="agregar('0')" class="cero">0</button>
+
+            <!-- Botón decimal -->
+            <button onclick="agregar('.')">.</button>
+
+        </div>
+    </div>
+
+    <!-- Conecta el archivo JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
