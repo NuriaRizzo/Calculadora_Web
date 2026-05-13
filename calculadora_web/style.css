@@ -1,128 +1,63 @@
-/* Estilos generales de la página */
+/* Fondo de la página */
 body{
-
-    /* Centra horizontalmente */
     display: flex;
-
-    /* Centra verticalmente */
     justify-content: center;
     align-items: center;
-
-    /* Altura completa de la pantalla */
     height: 100vh;
-
-    /* Color de fondo */
     background-color: #1e1e1e;
-
-    /* Tipo de letra */
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
-/* Contenedor principal de la calculadora */
+/* Caja principal */
 .calculadora{
-
-    /* Fondo de la calculadora */
     background-color: #2d2d2d;
-
-    /* Espaciado interno */
     padding: 20px;
-
-    /* Bordes redondeados */
     border-radius: 15px;
-
-    /* Sombra alrededor */
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
 }
 
-/* Pantalla donde aparecen los números */
+/* Pantalla */
 #pantalla{
-
-    /* Ancho completo */
     width: 100%;
-
-    /* Altura de la pantalla */
     height: 60px;
-
-    /* Espacio inferior */
     margin-bottom: 15px;
-
-    /* Tamaño del texto */
     font-size: 24px;
-
-    /* Alinea el texto a la derecha */
     text-align: right;
-
-    /* Espaciado interno derecho */
-    padding-right: 10px;
-
-    /* Elimina borde */
     border: none;
-
-    /* Bordes redondeados */
     border-radius: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
 }
 
-/* Contenedor de botones */
+/* Contenedor botones */
 .botones{
-
-    /* Utiliza diseño tipo cuadrícula */
     display: grid;
-
-    /* Crea 4 columnas */
     grid-template-columns: repeat(4, 70px);
-
-    /* Espacio entre botones */
     gap: 10px;
 }
 
-/* Estilos generales de botones */
+/* Botones */
 button{
-
-    /* Altura del botón */
     height: 60px;
-
-    /* Tamaño del texto */
     font-size: 20px;
-
-    /* Sin borde */
     border: none;
-
-    /* Bordes redondeados */
     border-radius: 10px;
-
-    /* Cambia el cursor al pasar encima */
-    cursor: pointer;
-
-    /* Color del botón */
     background-color: #4a4a4a;
-
-    /* Color del texto */
     color: white;
-
-    /* Efecto suave */
-    transition: 0.3s;
+    cursor: pointer;
 }
 
-/* Efecto al pasar el mouse */
+/* Hover */
 button:hover{
-
-    /* Cambia el color */
     background-color: #666;
 }
 
 /* Botón igual */
 .igual{
-
-    /* Ocupa dos filas */
     grid-row: span 2;
-
-    /* Color especial */
     background-color: orange;
 }
 
 /* Botón cero */
 .cero{
-
-    /* Ocupa dos columnas */
     grid-column: span 2;
 }
